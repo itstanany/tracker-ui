@@ -1,0 +1,53 @@
+{
+  "name": "tanany-issue-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "server-with-HMR": "webpack --config ./webpack.serverHMR.js --watch",
+    "build": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-middleware": "^4.1.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime-corejs3": "^7.12.13",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.8.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "http-proxy-middleware": "^0.21.0",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^16.14.0",
+    "react-bootstrap": "^0.33.1",
+    "react-dom": "^16.14.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^4.3.1",
+    "react-select": "^2.4.4",
+    "regenerator-runtime": "^0.13.7",
+    "serialize-javascript": "^5.0.1",
+    "source-map-support": "^0.5.19",
+    "url-search-params": "^1.1.0"
+  }
+}

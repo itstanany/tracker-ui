@@ -67,7 +67,7 @@ if (enableHMR && process.env.NODE_ENV !== 'production') {
   // add HMR plugin to the configuration object
   config.plugins = config.plugins || [];
   config.plugins.push(new webpack.HotModuleReplacementPlugin());
-  // generate webpack Compiler object instance required for webpackdevmiddleware and HMR
+  // generate webpack Compiler object instance required for webpack devmiddleware and HMR
   const compiler = webpack(config);
   // dev server middleware to serve static bundles
   app.use(devMiddleware(compiler));

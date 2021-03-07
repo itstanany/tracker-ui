@@ -10,7 +10,7 @@
     "server-with-HMR": "webpack --config ./webpack.serverHMR.js --watch",
     "build": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "npm run compile"
+    "heroku-postbuild": "npm run compile && ln -sf ../node_modules/bootstrap/dist public/bootstrap"
   },
   "author": "",
   "license": "ISC",

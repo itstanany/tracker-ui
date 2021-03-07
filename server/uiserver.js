@@ -43,8 +43,8 @@ const app = express();
 // apply proxy if proxy target is defined in the environment
 const apiProxyTarget = process.env.API_PROXY_TARGET;
 if (apiProxyTarget) {
-  app.use('/graphql', proxy({ target: apiProxyTarget }));
-  app.use('/auth', proxy({ target: apiProxyTarget }));
+  app.use('/graphql', proxy({ target: apiProxyTarget, changeOrigin: true }));
+  app.use('/auth', proxy({ target: apiProxyTarget, changeOrigin: true }));
 }
 
 

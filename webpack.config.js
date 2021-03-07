@@ -83,11 +83,9 @@ const browserConfig = {
   // generate source-map for the code for debugging compiled bundle
   //   in original code format and modules in browser
   devtool: 'source-map',
-  // clear the output directory of the previous build
   // define a global variable with default value true
   // this global variable is used in graphQLFetch
   plugins: [
-    // new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new webpack.DefinePlugin({
       __isBrowser__: true,
     }),

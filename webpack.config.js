@@ -87,7 +87,7 @@ const browserConfig = {
   // define a global variable with default value true
   // this global variable is used in graphQLFetch
   plugins: [
-    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
+    // new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     new webpack.DefinePlugin({
       __isBrowser__: true,
     }),

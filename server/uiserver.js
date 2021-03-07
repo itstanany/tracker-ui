@@ -90,7 +90,9 @@ app.get('/env.js', (req, res) => {
 // serve static files
 // here the path is resolved during runtime and this file directory will be "dist"
 // So, we pass to express.static an absolute path to "public" director where static assets resides
-app.use(express.static(path.join(__dirname, '..', 'public')));
+// app.use(express.static(path.join(__dirname, '..', 'public')));
+// try to solve fail style sheets loading
+app.use(express.static('public'));
 
 // we used use app.get because we want respond with the server-side-rendered HTML
 //  when receiving GET request

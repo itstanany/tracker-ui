@@ -1,6 +1,6 @@
 /dist
 node_modules
-*.env
+sample.env
 public/*.js
 public/*.js.map
 *.hot-update.js

@@ -56,9 +56,23 @@ function Footer() {
   return (
     <small>
       <p className="text-center">
-        The full source code of this project can be found at this
+        The full source code of this project can be found at Github
         {' '}
-        <a href="https://github.com/ahmedalima" rel="noreferrer" target="_blank">Github Repository</a>
+        <a
+          href="https://github.com/ahmedalima/tracker-ui"
+          rel="noreferrer"
+          target="_blank"
+        >
+          UI
+          </a>
+        and
+        <a
+          href="https://github.com/ahmedalima/tracker-api"
+          rel="noreferrer"
+          target="_blank"
+        >
+          API
+        </a>
       </p>
     </small>
   );

@@ -22,19 +22,19 @@ sourceMapSupport.install();
 const { PORT } = process.env;
 
 if (!process.env.UI_API_ENDPOINT) {
-  process.env.UI_API_ENDPOINT = 'http://localhost:3000/graphql';
+  process.env.UI_API_ENDPOINT = 'https://issue-tracker-api-ahmedalima.herokuapp.com/graphql';
 }
 
 if (!process.env.UI_SERVER_API_ENDPOINT) {
-  process.env.UI_SERVER_API_ENDPOINT = 'http://localhost:3000/graphql';
+  process.env.UI_SERVER_API_ENDPOINT = process.env.UI_API_ENDPOINT || 'https://issue-tracker-api-ahmedalima.herokuapp.com/graphql';
 }
 
 if (!process.env.UI_AUTH_ENDPOINT) {
-  process.env.UI_AUTH_ENDPOINT = 'http://localhost:3000/auth';
+  process.env.UI_AUTH_ENDPOINT = 'https://issue-tracker-api-ahmedalima.herokuapp.com/auth';
 }
 
 if (!process.env.GOOGLE_CLIENT_ID) {
-  process.env.GOOGLE_CLIENT_ID = '1013320688463-du9ji2u40jqblu151bu93qu8ibva59tb.apps.googleusercontent.com';
+  process.env.GOOGLE_CLIENT_ID = '1013320688463-u2u4vqrogofsjdoho6q918g9q9t9b8n2.apps.googleusercontent.com';
 }
 
 // create express app to handle request

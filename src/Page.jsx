@@ -64,8 +64,10 @@ function Footer() {
           target="_blank"
         >
           UI
-          </a>
+        </a>
+        &nbsp;
         and
+        &nbsp;
         <a
           href="https://github.com/ahmedalima/tracker-api"
           rel="noreferrer"

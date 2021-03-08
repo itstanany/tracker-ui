@@ -1,11 +1,15 @@
 <h1> Issue Tracker Application </h1>
 
-| A `Single Page Application` for tracking issues. - http://ui.issue-tracker-ahmedalima.tk
+| A fully responsive `Single Page Application` for tracking issues
+
+http://ui.issue-tracker-ahmedalima.tk/issues
 
 Live Demo:&nbsp; 
-<a href="http://ui.issue-tracker-ahmedalima.tk" target="blank" rel="noreferrer" >
+<a href="http://ui.issue-tracker-ahmedalima.tk/issues" target="blank" rel="noreferrer" >
  Issue Tracker 
 </a>
+
+<img src="./assets/images/description.png" alt="Main View, Issue List" />
 
 <h2>
 Technology Stack (MERN Stack)
@@ -31,12 +35,54 @@ Features
 
 * `Server-Side-Render(SSR)`.
   * full rendering with credentials. 
-* `Adding a New Issue.`
+
+
+* `Adding a New Issue.` 
+
+<img src="./assets/images/new-issue.png" alt="Add New Issue Page" />
+
+<br />
+
+<br />
+
+
 * `Editing Existing Issue.` - Requires authentication (Sign In).
+
+<img src="./assets/images/edit.png" alt="Edit Page" />
+
+<br />
+
+<br />
+
+* `Report Page`: List all Owners and number of Issue Types associated with them.
+
+<img src="./assets/images/report.png" alt="Report Page"/>
+
+<br />
+
+<br />
+
+
+
 * `Deleting Issue` - Requires authentication (Sign In).
+
 * `Close Issue` - Requires authentication (Sign In).
+
+* `Filter Issues`.
+
 * `Sign In` - Google OAuth2 Sign In
+
+<img src="./assets/images/signin.png" alt="Sign In Image" />
+
+<br />
+<br />
+
 * Persistent Sign in on browser refreshing during session.
+<br />
+
+* Search the `title` and `description` fields.
+
+<img src="./assets/images/search.png" alt="Search Image" />
 
 * User credentials are saved in Javascript Web Token &nbsp; `JWT`
 
@@ -67,9 +113,14 @@ Each Issue has the following properties:
 
 * `Description` => Detailed Description of the Issue
 
+<br />
+
+<br />
+
 This repository contains the UI application.
 
-To run locally:
+<h3> To run locally: </h3>
+
 * `Run the API Application`
   * API application Repository
     * https://github.com/ahmedalima/tracker-api

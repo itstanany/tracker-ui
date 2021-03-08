@@ -20,8 +20,11 @@ export default function template(body, initialData, userData) {
         <meta charset="UTF-8">
         <title>Issue Tracker</title>
         <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/style/style.css" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <style>
+          table.table-hover tr {cursor: pointer;}
+          .panel-title a {display: block; width: 100%; cursor: pointer;}
+        </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://apis.google.com/js/api:client.js"></script>
       </head>
